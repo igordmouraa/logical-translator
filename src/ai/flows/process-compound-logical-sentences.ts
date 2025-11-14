@@ -1,11 +1,4 @@
 'use server';
-/**
- * @fileOverview Converts and translates compound logical sentences, including those with negation.
- *
- * - processCompoundLogicalSentences - A function that handles the conversion and translation process.
- * - ProcessCompoundLogicalSentencesInput - The input type for the processCompoundLogicalSentences function.
- * - ProcessCompoundLogicalSentencesOutput - The return type for the processCompoundLogicalSentences function.
- */
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';

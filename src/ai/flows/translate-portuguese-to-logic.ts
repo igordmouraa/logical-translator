@@ -1,11 +1,4 @@
 'use server';
-/**
- * @fileOverview Translates Portuguese sentences into Classical Propositional Logic formulas.
- *
- * - translatePortugueseToLogic - A function that translates a Portuguese sentence to a logic formula.
- * - TranslatePortugueseToLogicInput - The input type for the translatePortugueseToLogic function.
- * - TranslatePortugueseToLogicOutput - The return type for the translatePortugueseToLogic function.
- */
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';

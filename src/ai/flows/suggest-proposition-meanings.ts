@@ -1,13 +1,5 @@
 'use server';
 
-/**
- * @fileOverview This file defines a Genkit flow to suggest meanings for propositions (P, Q, R).
- *
- * - suggestPropositionMeanings - A function that generates suggestions for proposition meanings.
- * - SuggestPropositionMeaningsInput - The input type for the suggestPropositionMeanings function.
- * - SuggestPropositionMeaningsOutput - The return type for the suggestPropositionMeanings function.
- */
-
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
@@ -22,9 +14,15 @@ export type SuggestPropositionMeaningsInput = z.infer<
   typeof SuggestPropositionMeaningsInputSchema
 >;
 
-const SuggestPropositionMeaningsOutputSchema = z.record(z.string(), z.string()).describe(
-  'A map of proposition (P, Q, or R) to its suggested meaning.'
-);
+// const SuggestPropositionMeaningsOutputSchema = z.object(z.string(), z.string()).describe(
+//   'A map of proposition (P, Q, or R) to its suggested meaning.'
+// );
+
+const SuggestPropositionMeaningsOutputSchema = z.object({
+    P: z.string().describe('Suggested meaning for proposition P.'),
+    Q: z.string().describe('Suggested meaning for proposition Q.'),
+    R: z.string().describe('Suggested meaning for proposition R.'),
+}).describe('An object containing suggested meanings for propositions P, Q, and R.');
 export type SuggestPropositionMeaningsOutput = z.infer<
   typeof SuggestPropositionMeaningsOutputSchema
 >;
