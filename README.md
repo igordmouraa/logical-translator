@@ -121,8 +121,8 @@ Siga estas instruções para obter uma cópia local do projeto.
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/igordmouraa/logical-translator](https://github.com/igordmouraa/logical-translator)
-    cd logica-ia-web
+    git clone https://github.com/igordmouraa/logical-translator
+    cd logical-translator
     ```
 
 2.  **Instale as dependências:**
