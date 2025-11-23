@@ -68,7 +68,7 @@ Você precisará ter o Node.js (v18 ou superior) e o npm, yarn ou pnpm instalado
 1. Clone o repositório:
 
 ```bash
-git clone [https://github.com/SEU-USUARIO/logica-ia-web.git](https://github.com/SEU-USUARIO/logica-ia-web.git)
+git clone [https://github.com/igordmouraa/logical-translator](https://github.com/igordmouraa/logical-translator)
 cd logica-ia-web
 ```
 
@@ -81,7 +81,7 @@ npm install
 3. Configure as variáveis de ambiente: Crie um arquivo .env.local na raiz do projeto e adicione suas chaves de API para o Genkit (ex: Google AI Studio).
 
 ```
-# Chave da API da LLM (ex: Google)
+# Chave da API da LLM 
 GOOGLE_API_KEY=SUA_GOOGLE_API_KEY
 ```
 
